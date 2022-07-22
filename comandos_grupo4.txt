@@ -1,10 +1,10 @@
-===================================================================
+git===================================================================
 = Criado por: Edison Y.Takaesu
 = Data : 22/07/2022
 = Este arquivo serve para criar linha a linha, ou seja, 
 = copiar os comandos começando com az (Azure) e colar na linha de comando do PowerShell do Azure
 = Assim aguardar até a  sua criação
-= 
+= v.1.00
 ===================================================================
 //Cloud Shell
 
@@ -34,5 +34,5 @@ az network nic create --resource-group TechCode --name Nic2 --vnet-name vnet04 -
 //  instalar Virtual Machine
 
 az vm create --resource-group TechCode --subnet frontend --vnet-name vnet04 --name Web_01 --image Win2022AzureEditionCore --public-ip-sku Standard --admin-username web04
-
-
+az vm create --resource-group TechCode --subnet backendSQL --vnet-name vnet04 --name BD_SQL_01 --image Win2022AzureEditionCore --public-ip-sku Standard --admin-username web04
+az vm create --resource-group TechCode --subnet backendSQL --vnet-name vnet04 --name BD_NOSQL_01 --image Win2022AzureEditionCore --public-ip-sku Standard --admin-username web04
