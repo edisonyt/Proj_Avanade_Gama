@@ -36,3 +36,7 @@ az network nic create --resource-group TechCode --name Nic2 --vnet-name vnet04 -
 az vm create --resource-group TechCode --subnet frontend --vnet-name vnet04 --name Web_01 --image Win2022AzureEditionCore --public-ip-sku Standard --admin-username web04
 az vm create --resource-group TechCode --subnet backendSQL --vnet-name vnet04 --name BD_SQL_01 --image Win2022AzureEditionCore --public-ip-sku Standard --admin-username web04
 az vm create --resource-group TechCode --subnet backendSQL --vnet-name vnet04 --name BD_NOSQL_01 --image Win2022AzureEditionCore --public-ip-sku Standard --admin-username web04
+
+// REMOVER ResouceGROUP....
+
+az group delete -n TechCode
